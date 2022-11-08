@@ -1,0 +1,45 @@
+.banner {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    /* 0.7 투명도 */
+    background-color: white;
+    margin-top: 0;
+    padding-top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .7);
+}
+
+.logo {
+    float: left;
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 1px solid black;
+}
+
+.theTag {
+    float: left;
+    margin-left: 20px;
+    /* margin-top: 4px; */
+    display: inline-block;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.search {
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+
+    border: 1px solid black;
+}
+
+.login {
+    float: right;
+    margin-right: 20px;
+}
