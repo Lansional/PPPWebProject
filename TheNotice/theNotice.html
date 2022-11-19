@@ -8,9 +8,11 @@
     <title>공지사항</title>
 
     <link href="theNotice.css" rel="stylesheet">
+    <link href="smaller.css" rel="stylesheet">
 </head>
 
 <body>
+    <script src="forMediaQuery.js"></script>
     <!-- 상단 바 -->
     <div class="theBar">
         <img class="logo">
@@ -21,15 +23,17 @@
             <li class="theTagLI"><a class="LIlink" href="#">게임정보</a></li>
             <li class="theTagLI"><a class="LIlink" href="#">게임정보</a></li>
         </ul>
-        <div class="login"><a class="link" href="#">로그인</a></div>
-        <div class="signUp"><a class="link" href="#">회원가입</a></div>
-        <div style="float: right; width: 20px;"></div>
+        <a style="color: black; text-decoration: none;" href="#"><div class="signUp">회원가입</div></a>
+        <div class="login"><a id="link" href="#">로그인</a></div>
     </div>
     <div style="height: 110px;"></div>
     <div class="notice">
         <p class="noticeText">공지사항<span class="insideOfNoticeText">&#124; 개발자노트</span></h2>
     </div>
-    <div class="grid"></div>
+    <div class="grid">
+
+
+    </div>
 </body>
 
 </html>

@@ -20,7 +20,7 @@ body {
 
 .theTagUL {
     margin-left: 100px;
-    margin-top: 27px;
+    margin-top: 30px;
     position: fixed;
 }
 
@@ -36,17 +36,34 @@ body {
     text-decoration: none;
 }
 
+/* 로그인 */
 .login {
-    margin-right: 120px;
     float: right;
-    margin-top: 20px;
-    width: 100px;
-    height: 34px;
-    background-color: gray;
-    margin-right: 20px;
+    margin-top: 21px;
+    margin-right: 10px;
+    width: 90px;
+    height: 25px;
+    background-color: rgb(56, 61, 57);
+    border: 1px solid rgb(56, 61, 57);
+    border-radius: 10px;
     text-align: center;
-    padding-top: 6px;
-    font-size: 12pt;
+    padding-top: 9px;
+    font-size: 10pt;
+}
+
+/* 회원가입 */
+.signUp {
+    float: right;
+    margin-top: 21px;
+    margin-right: 40px;
+    width: 90px;
+    height: 25px;
+    background-color: aqua;
+    border: 1px solid aqua;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 9px;
+    font-size: 10pt;
 }
 
 .notice {
@@ -58,7 +75,7 @@ body {
     background-color: black;
 }
 
-.link {
+#link {
     color: white;
     text-decoration: none;
 }
@@ -83,5 +100,6 @@ body {
     height: 1000px;
     margin-left: 5vw;
     margin-top: 30px;
+
     border: 1px solid black;
 }
