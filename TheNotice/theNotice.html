@@ -12,7 +12,6 @@
 </head>
 
 <body>
-    <script src="forMediaQuery.js"></script>
     <!-- 상단 바 -->
     <div class="theBar">
         <img class="logo">
@@ -23,8 +22,14 @@
             <li class="theTagLI"><a class="LIlink" href="#">게임정보</a></li>
             <li class="theTagLI"><a class="LIlink" href="#">게임정보</a></li>
         </ul>
-        <a style="color: black; text-decoration: none;" href="#"><div class="signUp">회원가입</div></a>
-        <div class="login"><a id="link" href="#">로그인</a></div>
+        <a style="color: black; text-decoration: none;" href="#">
+            <div id="signUp">
+                <div id="text">회원가입</div>
+            </div>
+        </a>
+        <a id="link" href="#">
+            <div class="login">로그인</div>
+        </a>
     </div>
     <div style="height: 110px;"></div>
     <div class="notice">
@@ -34,6 +39,7 @@
 
 
     </div>
+    <script src="forMediaQuery.js"></script>
 </body>
 
 </html>

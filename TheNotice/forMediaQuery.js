@@ -1,9 +1,9 @@
-function forMediaQuery() {
-    if (matchMedia("(max-width: 1024px)").matches) {
-        console.log("tablet");
-        // let text = document.getElementsByClassName('signUp');
-        // text.innerText = '&#8801;';
-    }
-}
+const mediaQuery = window.matchMedia('(max-width: 1024px)');
 
-forMediaQuery();
+var text = document.getElementById('text');
+
+if (mediaQuery.matches) {
+    text.innerText = '≡';
+} else {
+    text.innerText = '회원가입';
+}

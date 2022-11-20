@@ -52,7 +52,7 @@ body {
 }
 
 /* 회원가입 */
-.signUp {
+#signUp {
     float: right;
     margin-top: 21px;
     margin-right: 40px;
