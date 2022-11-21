@@ -38,6 +38,7 @@ body {
 
 /* 로그인 */
 .login {
+    animation: fadeIn 1.5s forwards;
     float: right;
     margin-top: 21px;
     margin-right: 10px;
@@ -53,6 +54,7 @@ body {
 
 /* 회원가입 */
 #signUp {
+    animation: fadeIn 1.5s forwards;
     float: right;
     margin-top: 21px;
     margin-right: 40px;
@@ -73,6 +75,12 @@ body {
     border: 1px solid black;
     border-top-right-radius: 50px;
     background-color: black;
+}
+
+#hiddenBtn {
+    float: right;
+    display: block;
+    visibility: hidden;
 }
 
 #link {
