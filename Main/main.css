@@ -1,0 +1,37 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+}
+.img
+{
+    background-color: black;
+    width: 30%;
+    height: 10%;
+    margin: auto
+}
+.touch-score
+{
+    background-color: aquamarine;
+    width: 18%;
+    height: 10%;
+    margin: 0 41vw;
+   
+}
+.nohomrim
+{
+    background-image: url("Main\안녕하나런.jpg");
+    background-color: aqua;
+    margin: auto;
+    margin-top: 20vh;
+    height: 40%;
+    width: 40%;
+}
+.under-benner
+{
+    margin: 0 41vw;
+}
+.ads
+{
+    margin: 0 41vw;
+}
