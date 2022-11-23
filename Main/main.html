@@ -1,16 +1,39 @@
 <html>
     <head>
         <link href="main.css" rel="stylesheet">
+        <script>
+            function openNav() 
+            {
+              document.getElementById("mySidenav").style.height = "149px";
+            }
+            
+            function closeNav() 
+            {
+              document.getElementById("mySidenav").style.height = "0";
+            }
+        </script>
     </head>
     <body>
         <div class="img"></div>
         <!-- <div class="touch-score"></div> -->
-        <iframe class="touch-score" style="border: 0;" src="plus.php" name="score"></iframe>
+        <!-- <iframe class="touch-score" style="border: 0;" src="plus.php" name="score"></iframe> -->
         <a href="plus.php" target="score"><div class="nohomrim"></div></a>
-        <iframe class="under-benner">
-            <iframe class="ads">
+        
+            <a href="javascript:void(0)" onclick="openNav()"> 
+            <div style="height: 5%; width: 10%; border: 1px solid black; border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom: 0; margin: auto;"></div>
+            </a>
+           
+            <div id="mySidenav" class="main-under-benner1">
+                <iframe class="under-benner"></iframe>
+                <div class="main-under-benner2">
+                <iframe class="ads"></iframe>
+                </div>
+            </div>
+            <a href="javascript:void(0)" onclick="closeNav()">  
+            <div style="height: 5%; width: 10%; border: 1px solid black; border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom: 0; margin: auto;"></div>
+            </a>
+     
 
-            </iframe>
-        </iframe>
+       
     </body>
 </html>
