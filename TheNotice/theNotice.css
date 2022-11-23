@@ -11,6 +11,10 @@ body {
     background-color: black;
 }
 
+#mySidenav {
+    visibility: hidden;
+}
+
 .logo {
     float: left;
     margin-top: 20px;
