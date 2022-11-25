@@ -17,10 +17,12 @@
     <body>
         <div id="mySidenav" class="main-top-bar">
             <div  class="main-under-benner1">
-             
+                    <a  href="javascript:void(0)" onclick="closeNav()">      
+                        <div style="border: 2px solid black; border-radius: 1%; width: 1%; height: 1%;"></div>
+                    </a>
                 <iframe class="under-benner"></iframe>
                 <div class="main-under-benner2">
-                <iframe class="ads" src="ads.html"></iframe>
+                <iframe class="ads"></iframe>
                 </div>
             </div>    
         </div>
@@ -30,12 +32,7 @@
         </a>
             
         <div class="main-click">
-            <br>
-            <div class="img">
-                <h1 style="color: black; text-align: center; display: grid;
-                place-items: center;
-                min-height: 10vh;">이름을 적어주십쇼!</h1>
-            </div>
+            <div class="img"></div>
             <p align="middle">
                 <iframe class="touch-score" src="plus.php" name="score"></iframe>
             </p>
@@ -43,8 +40,6 @@
                 <div class="nohomrim"></div>
             </a>
         </div>
-        <a  href="javascript:void(0)" onclick="closeNav()">      
-            <div style="border: 2px solid black; border-radius: 1%; width: 1%; height: 1%;"></div>
-        </a> 배너 창닫기
+            
     </body>
 </html>
