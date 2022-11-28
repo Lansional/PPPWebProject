@@ -1,0 +1,46 @@
+@media (max-width: 1024px) {
+    #signUp {
+        display: block;
+        visibility: hidden;
+    }
+
+    #hiddenBtn {
+        animation: fadeIn 1.5s forwards;
+        visibility: visible;
+
+        float: right;
+        margin-top: 15px;
+        margin-right: 40px;
+        width: 50px;
+        height: 40px;
+        background-color: rgb(56, 61, 57);
+        border: 1px solid rgb(56, 61, 57);
+        border-radius: 10px;
+        /* background-color : white; */
+        padding-top: 7px;
+        color: white;
+        text-align: center;
+        font-size: 20pt;
+    }
+
+    .theTagLI {
+        display: block;
+        visibility: hidden;
+    }
+
+    .login {
+        display: block;
+        visibility: hidden;
+    }
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
