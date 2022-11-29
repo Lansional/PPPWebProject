@@ -1,8 +1,13 @@
 var changed = document.getElementById("btn");
 
 changed.addEventListener('click', function clickTheIcon() {
-    if (changed.innerText == "visibility") 
+    var passwd = document.getElementById('passwd');
+
+    if (changed.innerText == "visibility") {
         changed.innerText = "visibility_off";
-    else 
+        passwd.type = "text";
+    } else {
         changed.innerText = "visibility";
+        passwd.type = "password";
+    }
 });
