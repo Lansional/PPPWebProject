@@ -16,14 +16,15 @@ body
 {
     float: left; 
     padding: 0 1rem; 
-    margin-top: 7
+    margin-top: 7;
+    
 }
 .main-ranking2
 {
     background-color: black; 
     height: 40px; 
-    max-width: 40rem;
-    margin: auto;
+    width: auto;
+   
 }
 .main-top-bar
 {
@@ -105,6 +106,7 @@ body
     top: 180px;
     /* background-color: sandybrown; */
     margin-top: 10px;
+ 
 }
 .img
 {
