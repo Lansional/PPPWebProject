@@ -5,6 +5,7 @@ body
     background-image: url("day.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 .main-leader
 {
@@ -96,23 +97,26 @@ body
 }
 .main-click
 {
-    /* width: 60vw; */
     max-width: 60rem;
     height: 71vh;
     margin: auto;
-    /* position: fixed; */
+    position: fixed;
     left: 0;
     right: 0;
     top: 180px;
     /* background-color: sandybrown; */
-    margin-top: 10px;
- 
+    margin-top: 30px;
+    /* bottom: 0; */
+    
 }
 .img
 {
-    /* background-image: url("안녕하나런.jpg"); */
+    background-image: url("popteamepic1.jpg");
     background-color: white;
-    max-width: 20rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    max-width: 30rem;
     height: 10vh;
     margin: auto;
 }
@@ -125,14 +129,18 @@ body
 }
 .nohomrim
 {
-    background-image: url("안녕하나런.jpg");
+    background-image: url("팝팀에픽1.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
     margin: auto;
     height: 50vh;
     max-width: 40rem;
 }
-
+.nohomrim:hover
+{
+    background-image: url("팜틱에픽2.png");
+}
 @media screen and (max-height: 450px) 
 {
 .main-under-benner1 {padding-top: 15px;}
