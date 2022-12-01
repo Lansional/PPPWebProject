@@ -1,119 +1,152 @@
-body 
-{
+body {
     margin: 0;
     padding: 0;
-    background-image: url("preview.gif");
+    background-image: url("day.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
+.main-leader {
+    background-color: white;
+    width: auto;
+    height: 40px;
+}
 
-.main-top-bar
-{
+.main-ranking1 {
+    float: left;
+    padding: 0 1rem;
+    margin-top: 7;
+
+}
+
+.main-ranking2 {
+    background-color: black;
+    height: 40px;
+    width: auto;
+
+}
+
+.main-top-bar {
     overflow-x: hidden;
     transition: 0.5s;
     margin: auto;
-    width: 56%;
-    height: 170px;
+    max-width: 53rem;
+
+    height: 160px;
     background-color: white;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-.main-top-bar .closebtn 
-{
-  position: absolute;
+
+.main-top-bar .closebtn {
+    position: absolute;
 
 }
-.main-under-benner1
-{
-    margin: auto;
-    right: 0;
-    height: 99%;
-    width: auto;
-    border: 2px solid black;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-top: 0;
- 
-    /* border-bottom: 0; */
-}
-.main-under-benner2
-{
+
+.main-under-benner1 {
     margin: auto;
     height: auto;
-    width: 80%;
+    width: auto;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
-.under-benner
-{
-    margin: 1vh 0.8vw;
-    width: 97%;
-    height: 25%;
-    /* border: 0; */
-    background-color: black;
+.main-under-benner2 {
+    margin: auto;
+    margin-top: 5px;
+    height: auto;
+    /* width: 60%; */
+    max-width: 32rem;
+
 }
-.main-top-button
-{
-    height: 2%; 
-    width: 10%; 
+
+.under-benner {
+    margin: 20 0;
+    width: 90%;
+    height: 25%;
+    float: left;
+    border-bottom-left-radius: 20px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    /* background-color: aquamarine; */
+}
+
+.main-top-button {
+    height: 3%;
+    /* width: 6%; */
+    max-width: 5rem;
     margin: auto;
     overflow-x: hidden;
-    transition: 0.5s;  
-}
-.main-top-button:hover
-{
-    border: 1px solid black;
-    background-color: white;
+    transition: 0.5s;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-}
-.ads
-{
-    margin: -0.9vh 0.8vw;
-    width: 100%;
-    height: 60%;
-    border: 2px solid black;
-    border-radius: 15px;
-  
+    background-color: white;
+    border-top: 0;
+    transform: 1s;
 }
 
-.main-click
-{
-    width: 60vw;
-    height: 75vh;
-    margin: auto;
-    /* background-color: sandybrown; */
-    margin-top: 1%;
+.ads {
+    width: 100%;
+    height: 55%;
+    border: 2px solid black;
+    border-radius: 15px;
 }
-.img
-{
-    background-image: url("안녕하나런.jpg");
-    width: 30vw;
+
+.main-click {
+    max-width: 60rem;
+    height: 71vh;
+    margin: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 180px;
+    /* background-color: sandybrown; */
+    margin-top: 30px;
+    /* bottom: 0; */
+
+}
+
+.img {
+    background-image: url("popteamepic1.jpg");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    max-width: 30rem;
     height: 10vh;
     margin: auto;
 }
-.touch-score
-{
-    background-color: aquamarine;
-    width: 10vw;
+
+.touch-score {
+    border: 3px solid black;
+    border-radius: 15px;
+    max-width: 10rem;
     height: 5vh;
-    border: 0;
 }
-.nohomrim
-{
-    background-image: url("Main\안녕하나런.jpg");
-    background-color: aqua;
+
+.nohomrim {
+    background-image: url("팝팀에픽1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     margin: auto;
     height: 50vh;
-    width: 40vw;
+    max-width: 40rem;
 }
 
-@media screen and (max-height: 450px) 
-{
-.main-under-benner1 {padding-top: 15px;}
+.nohomrim:hover {
+    background-image: url("팜틱에픽2.png");
+}
+
+@media screen and (max-height: 450px) {
+    .main-under-benner1 {
+        padding-top: 15px;
+    }
 
 }
-::-webkit-scrollbar 
-{
-display: none;
+
+::-webkit-scrollbar {
+    display: none;
 }
