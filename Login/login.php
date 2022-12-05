@@ -1,10 +1,13 @@
 <?php
 $id = $_POST['account'];
-$passwd = md5($_POST['password']);
+$passwd = md5($_POST['passwd']);
 
 include "../theServer.inc";
 
-$result = mysqli_query($db_conn, "SELECT * FROM $forTable WHERE id='$id' && password='$passwd'");
+// echo "\$id: ".$id."<br>";
+// echo "\$password: ".$passwd."<br>";
+
+$result = mysqli_query($db_conn, "SELECT * FROM $forTable WHERE account='$id' && password='$passwd'");
 
 if ($result) {
     session_start();
