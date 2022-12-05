@@ -23,7 +23,7 @@ if ($result) {
     $_SESSION['is_login'] = true;
     $_SESSION['id'] = $account;
 
-    echo "<script>alert('성공');</script>";
+    echo "<script>alert('가입완료');</script>";
     echo "<script>location.href='login.html';</script>";
 } else {
     // echo "실패!";

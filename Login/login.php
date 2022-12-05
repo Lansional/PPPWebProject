@@ -28,7 +28,7 @@ if ($result) {
 
     // echo "\$_SESSION: ".$_SESSION['id']."<br>";
     echo "<script>alert('안녕하세요 $id 님.')</script>";
-    echo "<script>location.href='../Main/main.html';</script>";
+    echo "<script>location.href='../Main/main.php';</script>";
 } else {
     echo "<script>alert('계정이나 비번이 틀렸습니다.')</script>";
     echo "<script>location.href='login.html';</script>";
