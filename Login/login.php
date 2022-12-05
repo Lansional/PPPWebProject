@@ -1,9 +1,20 @@
 <?php
 $id = $_POST['account'];
-$passwd = md5($_POST['passwd']);
+$passwd = $_POST['passwd'];
+
+if (!$id) {
+    echo "<script>alert('계정이름을 입력하세요')</script>";
+    echo "<script>location.href='login.html';</script>";
+}
+
+if (!$passwd) {
+    echo "<script>alert('비번을 입력하세요')</script>";
+    echo "<script>location.href='login.html';</script>";
+}
+
+$passwd = md5($passwd);
 
 include "../theServer.inc";
-
 // echo "\$id: ".$id."<br>";
 // echo "\$password: ".$passwd."<br>";
 
@@ -15,6 +26,7 @@ if ($result) {
     $_SESSION['is_login'] = true;
     $_SESSION['id'] = $id;
 
+    // echo "\$_SESSION: ".$_SESSION['id']."<br>";
     echo "<script>alert('안녕하세요 $id 님.')</script>";
     echo "<script>location.href='../Main/main.html';</script>";
 } else {
