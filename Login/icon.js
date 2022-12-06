@@ -11,3 +11,9 @@ changed.addEventListener('click', function clickTheIcon() {
         passwd.type = "password";
     }
 });
+
+function accountAndPasswordCheck() {
+    var toServer = document.getElementById('byServer');
+
+    toServer.submit();
+}

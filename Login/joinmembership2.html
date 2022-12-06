@@ -88,14 +88,15 @@
                     style="text-decoration: none; color:white">고객센터</a>•<a href="https://legal.kr.riotgames.com/privacy"
                     style="text-decoration: none; color:white">개인정보 처리방침</a>•<a
                     href="https://legal.kr.riotgames.com/tos" style="text-decoration: none; color:white">서비스 약관</a><br>
-                © 2020 RIOT GAMES, INC. ALL RIGHTS RESERVED.<br>
+                © 2020 HONGLIM GAMES, INC. ALL RIGHTS RESERVED.<br>
                 V 3.13.8</span>
         </span>
         <form id="toServer" action="register.php" method="post">
             <div class="content-item">
+                <div style="height: 30px"></div>
                 <span style="font-size: 25px;font-weight: 800;">아이디/비밀번호 입력.</span>
                 <div class="item-content1">
-                    <input name="id" type="text" size="30" style="height: 40px;" placeholder="아이디" required>
+                    <input id="id" name="id" type="text" size="30" style="height: 40px;" placeholder="아이디" required>
                 </div>
                 <p style="color:lightgrey;">PHP 아이디를 입력하시오.</p>
                 <div class="item-content2">
@@ -106,12 +107,12 @@
                     <input id="passwd_check" name="passwd_check" type="password" size="30" style="height: 40px;"
                         placeholder="비밀번호 확인" required>
                 </div>
-                <a href="#1" type="submit" onclick="passwd_check()" style="text-decoration: none; color:black"><span
+                <a href="#" type="submit" onclick="passwd_check()" style="text-decoration: none; color:black"><span
                         id="input-logo" class="material-symbols-outlined"
                         style="margin-right: 170px; margin-top: 8px; font-size: 60pt; border-radius: 30px;">arrow_circle_right</span></a>
             </div>
+        </form>
     </div>
-    </form>
     </div>
     <div class="grid-footer"></div>
     <script src="passwd_check.js"></script>

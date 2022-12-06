@@ -1,5 +1,4 @@
-body 
-{
+body {
     margin: 0;
     padding: 0;
     background-image: url("day.jpg");
@@ -82,22 +81,22 @@ body
     width: auto; 
     height: 40px;
 }
-.main-ranking1
-{
-    float: left; 
-    padding: 0 1rem; 
+
+.main-ranking1 {
+    float: left;
+    padding: 0 1rem;
     margin-top: 7;
-    
+
 }
-.main-ranking2
-{
-    background-color: black; 
-    height: 40px; 
+
+.main-ranking2 {
+    background-color: black;
+    height: 40px;
     width: auto;
-   
+
 }
-.main-top-bar
-{
+
+.main-top-bar {
     overflow-x: hidden;
     transition: 0.5s;
     margin: auto;
@@ -107,32 +106,31 @@ body
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-.main-top-bar .closebtn 
-{
-  position: absolute;
-  
+
+.main-top-bar .closebtn {
+    position: absolute;
+
 }
-.main-under-benner1
-{
+
+.main-under-benner1 {
     margin: auto;
     height: auto;
     width: auto;
-    
+
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-.main-under-benner2
-{
+
+.main-under-benner2 {
     margin: auto;
     margin-top: 5px;
     height: auto;
     /* width: 60%; */
     max-width: 32rem;
-  
+
 }
 
-.under-benner
-{
+.under-benner {
     margin: 20 0;
     width: 90%;
     height: 25%;
@@ -142,29 +140,29 @@ body
     transition: 0.5s;
     /* background-color: aquamarine; */
 }
-.main-top-button
-{
-    height: 3%; 
+
+.main-top-button {
+    height: 3%;
     /* width: 6%; */
-    max-width: 5rem; 
+    max-width: 5rem;
     margin: auto;
     overflow-x: hidden;
-    transition: 0.5s;  
+    transition: 0.5s;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: white;
     border-top: 0;
     transform: 1s;
 }
-.ads
-{
+
+.ads {
     width: 100%;
     height: 55%;
     border: 2px solid black;
     border-radius: 15px;
 }
-.main-click
-{
+
+.main-click {
     max-width: 60rem;
     height: 71vh;
     margin: auto;
@@ -175,10 +173,10 @@ body
     /* background-color: sandybrown; */
     margin-top: 30px;
     /* bottom: 0; */
-    
+
 }
-.img
-{
+
+.img {
     background-image: url("popteamepic1.jpg");
     background-color: white;
     background-repeat: no-repeat;
@@ -188,15 +186,15 @@ body
     height: 10vh;
     margin: auto;
 }
-.touch-score
-{
+
+.touch-score {
     border: 3px solid black;
     border-radius: 15px;
     max-width: 10rem;
     height: 5vh;
 }
-.nohomrim
-{
+
+.nohomrim {
     background-image: url("팝팀에픽1.jpg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -205,17 +203,19 @@ body
     height: 50vh;
     max-width: 40rem;
 }
-.nohomrim:hover
-{
+
+.nohomrim:active {
     background-image: url("팜틱에픽2.png");
-}
-@media screen and (max-height: 450px) 
-{
-.main-under-benner1 {padding-top: 15px;}
-
-}
-::-webkit-scrollbar 
-{
-display: none;
+    transition: 0.1s;
 }
 
+@media screen and (max-height: 450px) {
+    .main-under-benner1 {
+        padding-top: 15px;
+    }
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

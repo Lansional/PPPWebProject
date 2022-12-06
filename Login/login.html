@@ -98,27 +98,28 @@
         <div style="height: 60px;"></div>
         <div class="input-login">로그인
         </div>
-        <form>
+        <form id="byServer" method="post" action="login.php">
             <div class="inputwrapper">
                 <label>계정이름</label>
-                <input name="register" class="register" type="text" size="40" style="margin-left: 100px; height: 50px;"
-                    placeholder="계정이름">
+                <input name="account" id="account" class="register" type="text" size="40"
+                    style="margin-left: 100px; height: 50px;" placeholder="계정이름" required>
             </div>
             <div class="inputwrapper">
                 <label>비밀번호</label>
-                <input name="passwd" id="passwd" class="password" type="password" size="40" placeholder="비밀번호">
+                <input name="passwd" id="passwd" class="password" type="password" size="40" placeholder="비밀번호" required>
+                <a class="button" href="#1" style="text-decoration: none;"><span id="btn"
+                        class="material-symbols-outlined">visibility</span></a>
+                <input type="checkbox" style="margin-left: 100px;">로그인 상태 유지<br>
+            </div><br>
+            <a href="#" type="submit" onclick="accountAndPasswordCheck()"
+                style="text-decoration: none; color:black"><span id="input-logo" class="material-symbols-outlined"
+                    style="margin-right: 210px; margin-top: 50px; font-size: 60pt;">arrow_circle_right</span></a>
         </form>
-        <a class="button" href="#1" style="text-decoration: none;"><span id="btn"
-                class="material-symbols-outlined">visibility</span></a>
-    </div><br>
-    <input type="checkbox" style="margin-left: 100px;">로그인 상태 유지<br>
-    <a href="#2" style="text-decoration: none; color:black"><span id="input-logo" class="material-symbols-outlined"
-            style="margin-right: 210px; margin-top: 50px; font-size: 60pt;">arrow_circle_right</span></a>
-    <div class="login-join-textarea">
-        <a href="https://account.kr.riotgames.com/" style="text-decoration: none; color:gray" id="not-login">로그인이 안
-            되시나요?</a><br>
-        <a href="joinmembership.html" style="text-decoration: none; color:gray">계정 생성하기</a>
-    </div>
-    <script src="icon.js"></script>
+        <div class="login-join-textarea">
+            <a href="https://account.kr.riotgames.com/" style="text-decoration: none; color:gray" id="not-login">로그인이 안
+                되시나요?</a><br>
+            <a href="joinmembership.html" style="text-decoration: none; color:gray">계정 생성하기</a>
+        </div>
+        <script src="icon.js"></script>
     </div>
 </body>
