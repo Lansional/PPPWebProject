@@ -206,7 +206,7 @@ body {
 
 .nohomrim:active {
     background-image: url("팜틱에픽2.png");
-    transition: 0.1s;
+    transition: 0.05s;
 }
 
 @media screen and (max-height: 450px) {
