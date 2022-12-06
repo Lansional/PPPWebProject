@@ -6,79 +6,79 @@ body {
     background-size: cover;
     background-position: center;
 }
-.all-leader
-{
-    width: 20vw; 
-    height: 100%; 
-    float: left; 
-    position: fixed; 
+
+.all-leader {
+    width: 20vw;
+    height: 100%;
+    float: left;
+    position: fixed;
     border: 0px;
     /* background-color: aquamarine; */
 }
-.menu1
-{
-    width: 10vw; 
+
+.menu1 {
+    width: 10vw;
     height: 5vh;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     right: 0;
     margin: 10px -130px;
-    position: fixed; 
-     background-color: rgb(248, 133, 133);
-     transition: 2s; 
-    
+    position: fixed;
+    background-color: rgb(248, 133, 133);
+    transition: 2s;
+
 }
-.menu2
-{
-    width: 10vw; 
+
+.menu2 {
+    width: 10vw;
     height: 5vh;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     right: 0;
     margin: 50px -130px;
-    position: fixed; 
-     background-color: rgb(255, 200, 98);
-     transition: 1.5s; 
-    
+    position: fixed;
+    background-color: rgb(255, 200, 98);
+    transition: 1.5s;
+
 }
-.menu3
-{
-    width: 10vw; 
+
+.menu3 {
+    width: 10vw;
     height: 5vh;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     right: 0;
     margin: 90px -130px;
-    position: fixed; 
-     background-color: yellowgreen;
-     transition: 1.5s; 
-    
+    position: fixed;
+    background-color: yellowgreen;
+    transition: 1.5s;
+
 }
-.menu1:hover
-{
+
+.menu1:hover {
     margin: 5px 0;
     border: 5px solid black;
     border-right: 0;
-    transition: 1.5s; 
+    transition: 1.5s;
 }
-.menu2:hover
-{
+
+.menu2:hover {
     margin: 45px 0;
     border: 5px solid black;
     border-right: 0;
     transition: 1.5s;
 }
-.menu3:hover
-{
+
+.menu3:hover {
     margin: 85px 0;
     border: 5px solid black;
     border-right: 0;
     transition: 1.5s;
 }
-.main-leader
-{
-    background-color: white; 
-    width: auto; 
+
+.main-leader {
+    background-color: white;
+    width: auto;
     height: 40px;
 }
 
@@ -93,7 +93,13 @@ body {
     background-color: black;
     height: 40px;
     width: auto;
+    color: white;
+    padding-top: 6px;
+}
 
+.showCount {
+    color: white;
+    float: right;
 }
 
 .main-top-bar {
