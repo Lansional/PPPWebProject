@@ -106,9 +106,21 @@
         
     <div class="main-click">
         <div class="img">
-            <!-- <h1 style="color: black; text-align: center; display: grid;
-            place-items: center;
-            min-height: 10vh;">이름을 적어주십쇼!</h1> -->
+        <?php
+    if (!$_SESSION['is_login']) {
+        ?>
+        <h1 style="color: black; text-align: center; display: grid;
+        place-items: center;
+        min-height: 10vh;">이름을 적어주십쇼!</h1>
+        <?php
+    } else {
+        ?>
+        <h1 style="color: black; text-align: center; display: grid;
+        place-items: center;
+        min-height: 10vh;"><?php echo $_SESSION['id'] ?></h1>
+        <?php
+    }
+    ?>
         </div>
         <p align="middle">
             <iframe class="touch-score" src="plus.php" name="score"></iframe>
