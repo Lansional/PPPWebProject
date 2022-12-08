@@ -123,6 +123,13 @@
     ?>
         </div>
         <p align="middle">
+<?php
+    if ($_SESSION['is_login']) {
+        $result = mysqli_query($db_conn, "SELECT * FROM $forTable WHERE account='$account'");
+        $row = mysqli_fetch_array($result);
+        echo $row['count'];
+    }
+?>
             <iframe class="touch-score" src="plus.php" name="score"></iframe>
         </p>
         <a href="plus.php" target="score">

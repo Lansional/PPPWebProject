@@ -12,11 +12,6 @@ $passwd = md5($passwd);
 include "../theServer.inc";
 $result = mysqli_query($db_conn, "INSERT INTO $forTable VALUES ('$account', '$passwd', 0)");
 
-// debugging
-// echo "\$passwd: ".$passwd."<br>";
-// echo $account."<br>";
-// echo "md5(\$passwd): ".$passwd."<br>";
-
 if ($result) {
     session_start();
 
