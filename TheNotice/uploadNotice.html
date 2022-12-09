@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NoticeMaker</title>
+    <title>공지 올리기</title>
 
     <link href="uploadNotice.css" rel="stylesheet">
 </head>
 
 <body>
-    <form id="textArea" action="noticeUpload.php" method="post">
-        <input id="title" type="text" placeholder="제목을 입력하세요" required>
+    <form id="textArea" enctype="multipart/form-data" action="noticeUpload.php" method="post">
+        <input id="title" name="title" type="text" placeholder="제목을 입력하세요" required>
         <hr>
-        올릴 사진: <input id="file" type="file" required><br>
-        <textarea id="content" placeholder="내용을 입력하세요" required></textarea>
+        <input type="hidden" name="MAX_FILE_SIZE" value="1000000">
+        올릴 사진: <input id="file" name="file" type="file" required><br>
+        <textarea id="content" name="content" placeholder="내용을 입력하세요" required></textarea>
     </form>
     <div id="bottomBar">
         <input id="uploadBtn" type="submit" value="완료">

@@ -15,7 +15,7 @@
 <body>
     <iframe class="all-leader" name="leaderboard" ></iframe>
     
-    <a href="../TheNotice/theNotice.html" style="text-decoration: none; color: black;"><div class="menu1"><h3 style="margin-top: -0.1px; margin-left: 7px">➀</h3><h3 style="text-align: center; margin-left: 10px; margin-top: -40px;">공지사항</h1></div></a>
+    <a href="../TheNotice/theNotice.php" style="text-decoration: none; color: black;"><div class="menu1"><h3 style="margin-top: -0.1px; margin-left: 7px">➀</h3><h3 style="text-align: center; margin-left: 10px; margin-top: -40px;">공지사항</h1></div></a>
     <?php
     include "../theServer.inc";
     session_start();
