@@ -34,6 +34,13 @@
         visibility: hidden;
     }
 
+    .grid_img {
+        width: 340px;
+    }
+
+    .grid {
+        display: block;
+    }
 }
 
 @keyframes fadeIn {
