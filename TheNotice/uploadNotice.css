@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#textArea {
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#title {
+    margin-bottom: 20px;
+    width: 100%;
+    border: none;
+    font-size: 40pt;
+}
+
+#file {
+    margin-top: 40px;
+}
+
+#content {
+    font-size: 15pt;
+    resize: none;
+    border: none;
+    margin-top: 10px;
+    width: 100%;
+    height: 600px;
+}
+
+#bottomBar {
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    position: fixed;
+    overflow: hidden;
+    background-color: gray;
+}
+
+#uploadBtn {
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 100px;
+    width: 100px;
+    height: 40px;
+}

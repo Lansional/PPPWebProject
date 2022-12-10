@@ -1,23 +1,13 @@
-// const mediaQuery = window.matchMedia('(max-width: 1024px)');
+var hiddenBtn = document.getElementById('hiddenBtn');
 
-// var text = document.getElementById('text');
+hiddenBtn.addEventListener('click', function openNav() {
+    var mySidenav = document.getElementById('mySidenav');
 
-// if (mediaQuery.matches) {
-//     text.innerText = '≡';
-// } else {
-//     text.innerText = '회원가입';
-// }
-
-function openNav() {
-    document.getElementById('mySidenav').style.visibility = 'visible';
-    document.getElementById('mySidenav').style.width = '320px';
-}
-
-function closeNav() {
-    document.getElementById('mySidenav').style.visibility = 'hidden';
-    document.getElementById('mySidenav').style.width = '0px';
-}
-
-function name(params) {
-
-}
+    if (mySidenav.style.width == '320px') {
+        mySidenav.style.width = '0px';
+        mySidenav.style.visibility = 'hidden';
+    } else {
+        mySidenav.style.width = '320px';
+        mySidenav.style.visibility = 'visible';
+    }
+});

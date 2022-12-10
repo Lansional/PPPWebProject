@@ -1,0 +1,125 @@
+<head>
+    <!-- <link href="password.css" rel="stylesheet"> -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>로그인</title>
+</head>
+<style>
+    .main-login {
+        background-color: white;
+        border-radius: 30px;
+        height: 600px;
+        width: 500px;
+        margin-left: 500px;
+        margin-top: 50px;
+    }
+
+    .input-login {
+        height: 100px;
+        width: 100%;
+        text-align: center;
+        font-size: 35px;
+        margin-top: 20px;
+    }
+
+    .login-join-textarea {
+        background-color: white;
+        height: 65px;
+        width: 80%;
+        margin-top: 179px;
+        margin-left: 50px;
+        text-align: center;
+    }
+
+    .main {
+        width: 300px;
+        border: 1px solid black;
+        height: 50px;
+        margin-left: 20%;
+        margin-top: 30;
+    }
+
+    .material-symbols-outlined {
+        margin-top: 13px;
+        margin-right: 5px;
+        float: right;
+    }
+
+    .inputwrapper {
+        position: relative;
+    }
+
+    .register {
+        border: 2px solid black;
+        position: relative;
+        width: 300px;
+        margin: 10px;
+        line-height: 6ex;
+    }
+
+    label {
+        position: absolute;
+        top: 0.2ex;
+        z-index: 1;
+        left: 7em;
+        background-color: white;
+        padding: 0 5px;
+    }
+
+    #btn {
+        border: 1px solid black;
+        border-width: 2px;
+        border-left: none;
+        margin-right: 99px;
+        margin-top: 12px;
+        padding-right: 24.9px;
+        padding-top: 11px;
+        padding-bottom: 11.5px;
+    }
+
+    .password {
+        margin-left: 100px;
+        margin-top: 12px;
+        height: 50px;
+        width: 250px;
+        border-right: none;
+        line-height: 6ex;
+    }
+
+    #input-logo:hover {
+        background-color: aqua;
+        border-radius: 100px;
+        transition: 1s;
+    }
+</style>
+
+<body style="background-image: url(back-image.jpg); background-size: cover; background-repeat:no ;">
+    <div class="main-login">
+        <div style="height: 60px;"></div>
+        <div class="input-login">로그인
+        </div>
+        <form id="byServer" method="post" action="login.php">
+            <div class="inputwrapper">
+                <label>계정이름</label>
+                <input name="account" id="account" class="register" type="text" size="40"
+                    style="margin-left: 100px; height: 50px;" placeholder="계정이름" required>
+            </div>
+            <div class="inputwrapper">
+                <label>비밀번호</label>
+                <input name="passwd" id="passwd" class="password" type="password" size="40" placeholder="비밀번호" required>
+                <a class="button" href="#1" style="text-decoration: none;"><span id="btn"
+                        class="material-symbols-outlined">visibility</span></a>
+                <input type="checkbox" style="margin-left: 100px;">로그인 상태 유지<br>
+            </div><br>
+            <a href="#" type="submit" onclick="accountAndPasswordCheck()"
+                style="text-decoration: none; color:black"><span id="input-logo" class="material-symbols-outlined"
+                    style="margin-right: 210px; margin-top: 50px; font-size: 60pt;">arrow_circle_right</span></a>
+        </form>
+        <div class="login-join-textarea">
+            <a href="https://account.kr.riotgames.com/" style="text-decoration: none; color:gray" id="not-login">로그인이 안
+                되시나요?</a><br>
+            <a href="joinmembership.html" style="text-decoration: none; color:gray">계정 생성하기</a>
+        </div>
+        <script src="icon.js"></script>
+    </div>
+</body>
