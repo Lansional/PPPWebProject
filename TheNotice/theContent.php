@@ -12,7 +12,7 @@
     session_start();
     ?>
 
-    <link rel="stylesheet" type="text/css" href="theNotice.css">
+    <link rel="stylesheet" type="text/css" href="theContent.css">
     <link rel="stylesheet" type="text/css" href="smaller.css">
     <link rel="stylesheet" type="text/css" href="smallerSideBar.css">
 </head>
@@ -58,17 +58,24 @@ border: 1px solid rgb(56, 61, 57); color: white; " href="../Login/joinmembership
 border: 1px solid rgb(56, 61, 57); color: white; margin-right: 10px" href="../Login/login.html">
             <div id="text">로그인</div>
         </a>
-    <?php
+        <?php
     }
+
+    $id = $_GET['id'];
+    $result = mysqli_query($db_conn, "SELECT * FROM $fortable WHERE id=$id");
+    $row = mysqli_fetch_array($result);
     ?>
     </div>
     <div style="height: 110px;"></div>
-    <div class="notice">
-        <p class="noticeText">공지사항<span class="insideOfNoticeText">&#124; 개발자노트</span></h2>
+    <div class="notice" style="
+        background-image: url('Images/<?=$row['file']?>');
+        background-size: cover;
+        ">
     </div>
-    <div class="grid">
-        
-    </div>
+    <h1 class="title"><?=$row['title']?></h1>
+    <br>
+    <p class="content"><?=$row['content']?></p>
+    <br>
     <?php
     mysqli_close($db_conn);
     ?>

@@ -68,7 +68,7 @@ border: 1px solid rgb(56, 61, 57); color: white; margin-right: 10px" href="../Lo
     </div>
     <div class="grid">
 <?php
-    $result = mysqli_query($db_conn, "SELECT * FROM $forTable");
+    $result = mysqli_query($db_conn, "SELECT * FROM $fortable");
     while ($row = mysqli_fetch_array($result)) {
         echo ("
         <a href='theContent.php?id=".$row['id']."' class='gridOfOne'>
