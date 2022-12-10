@@ -1,5 +1,8 @@
 <html>
 <head>
+    <?php
+    include "../theServer.inc";
+    ?>
     <link href="main.css" rel="stylesheet">
     <script>
         function openNav() 
@@ -17,11 +20,10 @@
     
     <a href="../TheNotice/theNotice.php" style="text-decoration: none; color: black;"><div class="menu1"><h3 style="margin-top: -0.1px; margin-left: 7px">➀</h3><h3 style="text-align: center; margin-left: 10px; margin-top: -40px;">공지사항</h1></div></a>
     <?php
-    include "../theServer.inc";
     session_start();
 
     if (!$_SESSION['is_login']) {
-        ?>
+    ?>
         <a href="../Login/login.html" style="text-decoration: none; color: black;"><div class="menu2"><h3 style="margin-top: -0.1px; margin-left: 7px">➁</h3><h3 style="text-align: center; margin-left: 10px; margin-top: -40px;">로그인</h1></div></a>
         <?php
     } else {
@@ -52,44 +54,45 @@
                 <div class="main-leader">
                     <p class="main-ranking1">🏆</p>
                     <div class="main-ranking2">
-                        <?php echo $row['account']; ?>
-                    </div>
-                    <!-- 클릭한 횟수 -->
-                    <div class="showCount">     
-                        <?php echo $row['count']; ?>
+                        <span><?= $row['account']; ?></span>
+                        <!-- 클릭한 횟수 -->
+                        <span class="showCount"><?= $row['count']; ?></span>
                     </div>
                 </div>
-<?php
+                <?php
         $row = mysqli_fetch_array($result);
-?>
+        ?>
                 <br>
                 <div class="main-leader">
                     <p class="main-ranking1">🥇</p>
                     <div class="main-ranking2">
-                        <?php echo $row['account']; ?>
+                        <span><?= $row['account']; ?></span>
+                        <!-- 클릭한 횟수 -->
+                        <span class="showCount"><?= $row['count']; ?></span>
                     </div>
                 </div>
-<?php
+                <?php
         $row = mysqli_fetch_array($result);
-?>
+        ?>
                 <br>
                 <div class="main-leader">
                     <p class="main-ranking1">🥈</p>
                     <div class="main-ranking2">
-                        <?php echo $row['account']; ?>
-                    </div>
-                    <div class="showCount">
-                        <?php echo $row['count']; ?>
+                        <span><?= $row['account']; ?></span>
+                        <!-- 클릭한 횟수 -->
+                        <span class="showCount"><?= $row['count']; ?></span>
                     </div>
                 </div>
-                <br>
 <?php
         $row = mysqli_fetch_array($result);
 ?>
+                <br>
                 <div class="main-leader">
                     <p class="main-ranking1">🥉</p>
                     <div class="main-ranking2">
-                        <?php echo $row['account']; ?>
+                        <span><?= $row['account']; ?></span>
+                        <!-- 클릭한 횟수 -->
+                        <span class="showCount"><?= $row['count']; ?></span>
                     </div>
                 </div>
             </div>    
@@ -106,39 +109,36 @@
         
     <div class="main-click">
         <div class="img">
-        <?php
-    if (!$_SESSION['is_login']) {
-        ?>
-        <h1 style="color: black; text-align: center; display: grid;
-        place-items: center;
-        min-height: 10vh;">이름을 적어주십쇼!</h1>
-        <?php
-    } else {
-        ?>
-        <h1 style="color: black; text-align: center; display: grid;
-        place-items: center;
-        min-height: 10vh;"><?php echo $_SESSION['id'] ?></h1>
-        <?php
-    }
-    ?>
         </div>
-        <p align="middle">
 <?php
     if ($_SESSION['is_login']) {
-        $result = mysqli_query($db_conn, "SELECT * FROM $forTable WHERE account='$account'");
+        $result = mysqli_query($db_conn, "SELECT * FROM $forTable WHERE account='".$_SESSION['id']."'");
         $row = mysqli_fetch_array($result);
-        echo $row['count'];
+    ?>
+        <div class="score_with_count">
+            <h2><?= $_SESSION['id'] ?></h3>
+            <h3><?= $row['count'] ?></h3>
+        </div>
+    <?php
+    } else {
+    ?>
+        <div class="score_with_count">
+            <h2>로그인하세요</h3>
+            <h3></h3>
+        </div>
+    <?php
     }
-?>
+    ?>
+        <!-- <p align="middle">
             <iframe class="touch-score" src="plus.php" name="score"></iframe>
-        </p>
-        <a href="plus.php" target="score">
+        </p> -->
+        <div href="plus.php">
             <div class="nohomrim"></div>
-        </a>
+        </div>
     </div>
-    <!-- <a  href="javascript:void(0)" onclick="closeNav()">      
-        <div style="border: 2px solid black; border-radius: 1%; width: 1%; height: 1%;"></div>
-    </a>  -->
+    <script>
+        
+    </script>
     <?php
 mysqli_close($db);
     ?>

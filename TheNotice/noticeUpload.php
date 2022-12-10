@@ -7,7 +7,7 @@ function NULLReturn($str) {
 include "../theNotice.inc";
 
 $title = $_POST['title'];
-$file = $_FILES['file'][name];
+$file = $_FILES['file']['name'];
 $content = $_POST['content'];
 
 if (!$title)
@@ -17,28 +17,34 @@ else if (!$file)
 else if (!$content)
     NULLReturn('내용을 입력하세요!');
 
-$result = mysqli_query($db_conn, "SELECT * FROM $forTable");
+$result = mysqli_query($db_conn, "SELECT * FROM $fortable ORDER BY id DESC LIMIT 1");
+
+
 $row = mysqli_fetch_array($result);
+
+echo "\$row['id']: ".$row['id']."<br>";
+echo "\$row['title']: ".$row['title']."<br>";
+echo "\$row['content']: ".$row['content']."<br>";
+echo "\$row['file']: ".$row['file']."<br>";
 
 $id = $row['id'] + 1;
 $time = date('Y-m-d');
 
-$upload_dir = "Images/".$_FILES['file'][name];
+$upload_dir = "Images/".$file;
 move_uploaded_file($_FILES['file']['tmp_name'], $upload_dir);
 
-// echo "\$id: $id<br>";
-// echo "\$upload_dir: ".$upload_dir."<br>";
+echo "\$id: $id<br>";
 
-$result = mysqli_query($db_conn, "INSERT INTO $forTable VALUES ($id, '$title', '$content', '$file', '$time')");
+$result = mysqli_query($db_conn, "INSERT INTO $fortable VALUES ($id, '$title', '$content', '$file', '$time')");
 
 if ($result) {
-    // echo "성공";
-    echo "<script>alert('게시 성공하였습니다.')</script>";
-    echo "<script>location.href='uploadNotice.html';</script>";
+    echo "성공";
+    // echo "<script>alert('게시 성공하였습니다.')</script>";
+    // echo "<script>location.href='uploadNotice.html';</script>";
 } else {
-    // echo "실패";
-    echo "<script>alert('게시 실패하였습니다.')</script>";
-    echo "<script>location.href='uploadNotice.html';</script>";
+    echo "실패";
+    // echo "<script>alert('게시 실패하였습니다.')</script>";
+    // echo "<script>location.href='uploadNotice.html';</script>";
 }
 
 mysqli_close($db_conn);
