@@ -1,0 +1,76 @@
+body
+{
+    background-color: white;   
+    margin: 0;
+    padding: 0;
+  
+}
+.leader
+{
+    width: auto;
+    height: 10vh;
+    border-bottom: 4px solid black;
+}
+.all-leader
+{
+    width: auto;
+    height: 6vh;
+    background-color: aquamarine;
+    border-bottom: 4px solid black;
+  
+}
+.all-leader2
+{
+    width: auto;
+    height: 6vh;
+    background-color: aquamarine;
+    border-bottom: 4px solid black;
+    margin-top: 10px;
+    border-top: 4px solid black;
+}
+.close
+{
+
+    width: auto;
+    height: 4vh;
+    border: 2px solid black;
+    border-radius: 15px;
+    /* margin-bottom: 40px; */
+   
+}
+.text
+{
+    text-align: center;
+
+    
+}
+.text1
+{
+   margin-top: 0px;
+    color: black;
+    text-align: center;
+    font-size: larger;
+}
+.emogi
+{
+    float: left;
+    width: 15vw;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+.main-ranking1 
+{
+    padding: 0 0.6rem;
+    float: left;
+    margin-top: 9;
+}
+
+.name
+{
+    float: left;
+}
+.score
+{
+    float: right;
+}

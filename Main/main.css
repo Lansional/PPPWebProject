@@ -13,7 +13,8 @@ body {
     float: left;
     position: fixed;
     border: 0px;
-    /* background-color: aquamarine; */
+    border-radius: 15px;
+    /* background-color: ; */
 }
 
 .menu1 {
@@ -54,6 +55,18 @@ body {
     transition: 1.5s;
 
 }
+.menu4 {
+    width: 10vw;
+    height: 5vh;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    right: 0;
+    margin: 130px -120px;
+    position: fixed;
+    background-color: rgb(47, 182, 255);
+    transition: 1.5s;
+
+}
 
 .menu1:hover {
     margin: 5px 0;
@@ -75,6 +88,12 @@ body {
     border-right: 0;
     transition: 1.5s;
 }
+.menu4:hover {
+    margin: 125px 0;
+    border: 5px solid black;
+    border-right: 0;
+    transition: 1.5s;
+}
 
 .main-leader {
     background-color: white;
@@ -89,17 +108,17 @@ body {
 }
 
 .main-ranking2 {
-    background-color: black;
+    /* background-color: black; */
     height: 30px;
     width: auto;
     /* width: 360px; */
-    color: white;
+    color: black;
     padding-top: 9;
 }
 
 .showCount {
     float: right;
-    color: white;
+    color: black;
     margin-right: 20px;
 }
 
@@ -217,7 +236,7 @@ body {
 }
 
 .score_with_count {
-    width: 200px;
+    width: 50vw;
     text-align: center;
 
     /* border: 1px solid black; */
