@@ -71,24 +71,27 @@
             © 2020 INC. ALL RIGHTS RESERVED.<br>
              V 3.13.8</span>
         </span>
-        <div class="content-item">
-            <div style="height: 20px;"></div>
-        <span style="font-size: 25px;font-weight: 800;">아이디/비밀번호 입력.</span>
-        <div class="item-content1">
-            <input type="text" size="30" style="height: 40px;" placeholder="아이디">
-        </div>
-        <p style="color:lightgrey;">PHP 아이디를 입력하시오.</p>
-        <div class="item-content2">
-            <input type="password" size="30" style="height: 40px;" placeholder="비밀번호">
-        </div>
-        <div class="item-content3">
-            <input type="password" size="30" style="height: 40px;" placeholder="비밀번호 확인">
-        </div>
-        <div style="height: 10px;"></div>
-         <a href="#1" style="text-decoration: none; color:black"><span id="input-logo" class="material-symbols-outlined" style="margin-right: 170px; margin-top: 8px; font-size: 60pt; border-radius: 30px;">arrow_circle_right</span></a>
-        </div>
-        </div>
+        <form id="toServer" action="register.php" method="post">
+            <div class="content-item">
+                <div style="height: 20px;"></div>
+            <span style="font-size: 25px;font-weight: 800;">아이디/비밀번호 입력.</span>
+            <div class="item-content1">
+                <input name="id" type="text" size="30" style="height: 40px;" placeholder="아이디">
+            </div>
+            <p style="color:lightgrey;">PHP 아이디를 입력하시오.</p>
+            <div class="item-content2">
+                <input name="passwd" type="password" size="30" style="height: 40px;" placeholder="비밀번호">
+            </div>
+            <div class="item-content3">
+                <input name="passwd_check" type="password" size="30" style="height: 40px;" placeholder="비밀번호 확인">
+            </div>
+            <div style="height: 10px;"></div>
+            <a href="#1" onclick="passwd_check()" style="text-decoration: none; color:black"><span id="input-logo" class="material-symbols-outlined" style="margin-right: 170px; margin-top: 8px; font-size: 60pt; border-radius: 30px;">arrow_circle_right</span></a>
+            </div>
+            </div>
+        </form>
     </div>
     <div class="grid-footer"></div>
+    <script src="passwd_check.js"></script>
 </body>
 </html>
