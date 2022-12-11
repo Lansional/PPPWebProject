@@ -22,7 +22,6 @@
         padding: 0 3rem;
         width: 83.5%;
         height: 100%;
-        border: 1px solid gray;
         margin: 10px auto;
         background-color: white;
         }
