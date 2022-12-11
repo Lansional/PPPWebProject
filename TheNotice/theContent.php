@@ -20,21 +20,15 @@
 <body>
     <div id="mySidenav" class="sidenav">
         <img class="logo" style="margin-left: 20px"><br><br><br><br>
-        <a class="navID" href="#">게임정보</a>
-        <a class="navID" href="#">게임정보</a>
-        <a class="navID" href="#">게임정보</a>
-        <a class="navID" href="#">게임정보</a>
-        <a class="navID" href="#">게임정보</a>
+        <a class="navID" href="../Main/main.php">게임</a>
+        <a class="navID" href="library.html">이용약관</a>
     </div>
     <!-- 상단 바 -->
     <div class="theBar">
         <img class="logo">
         <ul class="theTagUL">
-            <li class="theTagLI"><a class="LIlink" href="#">게임정보</a></li>
-            <li class="theTagLI"><a class="LIlink" href="#">게임정보</a></li>
-            <li class="theTagLI"><a class="LIlink" href="#">게임정보</a></li>
-            <li class="theTagLI"><a class="LIlink" href="#">게임정보</a></li>
-            <li class="theTagLI"><a class="LIlink" href="#">게임정보</a></li>
+        <li class="theTagLI"><a class="LIlink" href="../Main/main.php">게임</a></li>
+            <li class="theTagLI"><a class="LIlink" href="library.html">이용약관</a></li>
         </ul>
         <a style="float: right; color: black; text-decoration: none; " href="#">
             <div id="hiddenBtn">
@@ -74,6 +68,7 @@ border: 1px solid rgb(56, 61, 57); color: white; margin-right: 10px" href="../Lo
     </div>
     <h1 class="title"><?=$row['title']?></h1>
     <br>
+    <h3 style="margin-left: 60px">시간: <?=$row['time']?></h3>
     <p class="content"><?=$row['content']?></p>
     <br>
     <?php

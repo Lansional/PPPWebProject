@@ -28,6 +28,11 @@
         display: block;
         visibility: hidden;
     }
+    
+    .grid_img {
+        width: 300px;
+        height: 150px;
+    }
 
     .login {
         display: block;

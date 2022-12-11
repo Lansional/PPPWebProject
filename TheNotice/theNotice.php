@@ -20,21 +20,15 @@
 <body>
     <div id="mySidenav" class="sidenav">
         <img class="logo" style="margin-left: 20px"><br><br><br><br>
-        <a class="navID" href="#">게임정보</a>
-        <a class="navID" href="#">게임정보</a>
-        <a class="navID" href="#">게임정보</a>
-        <a class="navID" href="#">게임정보</a>
-        <a class="navID" href="#">게임정보</a>
+        <a class="navID" href="../Main/main.php">게임</a>
+        <a class="navID" href="library.html">이용약관</a>
     </div>
     <!-- 상단 바 -->
     <div class="theBar">
         <img class="logo">
         <ul class="theTagUL">
-            <li class="theTagLI"><a class="LIlink" href="#">게임정보</a></li>
-            <li class="theTagLI"><a class="LIlink" href="#">게임정보</a></li>
-            <li class="theTagLI"><a class="LIlink" href="#">게임정보</a></li>
-            <li class="theTagLI"><a class="LIlink" href="#">게임정보</a></li>
-            <li class="theTagLI"><a class="LIlink" href="#">게임정보</a></li>
+            <li class="theTagLI"><a class="LIlink" href="../Main/main.php">게임</a></li>
+            <li class="theTagLI"><a class="LIlink" href="library.html">이용약관</a></li>
         </ul>
         <a style="float: right; color: black; text-decoration: none; " href="#">
             <div id="hiddenBtn">
@@ -70,13 +64,15 @@ border: 1px solid rgb(56, 61, 57); color: white; margin-right: 10px" href="../Lo
 <?php
     $result = mysqli_query($db_conn, "SELECT * FROM $fortable");
     while ($row = mysqli_fetch_array($result)) {
-        echo ("
-        <a href='theContent.php?id=".$row['id']."' class='gridOfOne'>
-            <img class='grid_img' src='Images/".$row['file']."'>
-            <div class='smallText'><strong>공지사항</strong></div>
-            <div class='title'>".$row['title']."</div>
+?>
+        <a href="theContent.php?id=<?=$row['id']?>" class="gridOfOne">
+            <div class="grid_img" 
+                style="background-image: url('Images/<?=$row['file']?>');
+                        background-size: cover"></div>
+            <div class="smallText"><strong>공지사항</strong></div>
+            <div class="title"><?=$row['title']?></div>
         </a>
-        ");
+<?php
     }
 ?>
     </div>
