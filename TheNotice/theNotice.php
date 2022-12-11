@@ -21,14 +21,14 @@
     <div id="mySidenav" class="sidenav">
         <img class="logo" style="margin-left: 20px"><br><br><br><br>
         <a class="navID" href="../Main/main.php">게임</a>
-        <a class="navID" href="library.html">이용약관</a>
+        <a class="navID" href="../The이용약관/agree.php">이용약관</a>
     </div>
     <!-- 상단 바 -->
     <div class="theBar">
         <img class="logo">
         <ul class="theTagUL">
             <li class="theTagLI"><a class="LIlink" href="../Main/main.php">게임</a></li>
-            <li class="theTagLI"><a class="LIlink" href="library.html">이용약관</a></li>
+            <li class="theTagLI"><a class="LIlink" href="../The이용약관/agree.php">이용약관</a></li>
         </ul>
         <a style="float: right; color: black; text-decoration: none; " href="#">
             <div id="hiddenBtn">

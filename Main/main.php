@@ -57,7 +57,7 @@
     }
     ?>
     <a href="tel:https://popcat.click/" style="text-decoration: none; color: black;"><div class="menu3"><h3 style="margin-top: -0.1px; margin-left: 7px">③</h3><h3 style="text-align: center; margin-left: 10px; margin-top: -40px;">링크 공유</h1></div></a>
-    <a href="tel:https://popcat.click/" style="text-decoration: none; color: black;"><div class="menu4"><h3 style="margin-top: -0.1px; margin-left: 7px">④</h3><h3 style="text-align: center; margin-left: 10px; margin-top: -40px;">이용약관</h1></div></a>
+    <a href="../The이용약관/agree.php" style="text-decoration: none; color: black;"><div class="menu4"><h3 style="margin-top: -0.1px; margin-left: 7px">④</h3><h3 style="text-align: center; margin-left: 10px; margin-top: -40px;">이용약관</h1></div></a>
 
 
 
@@ -128,7 +128,7 @@
     
     <a href="javascript:void(0)" onclick="openNav()" style="text-decoration: none;">
         <div class="main-top-button" id="hiddenBtn">
-            <h2 style="text-align: center; margin-top: -6px; color: black; height: 0;">
+            <h2 style="text-align: center; color: black; height: 0; margin-top:-7px;">
                 =
             </h2> 
         </div>
@@ -138,7 +138,8 @@
         <div class="img">
         </div>
 <?php
-    if ($_SESSION['is_login']) {
+    if ($_SESSION['is_login']) 
+    {
         $result = mysqli_query($db_conn, "SELECT * FROM $forTable WHERE account='".$_SESSION['id']."'");
         $row = mysqli_fetch_array($result);
     ?>
@@ -147,7 +148,9 @@
             <h3><?= $row['count'] ?></h3>
         </div>
     <?php
-    } else {
+    } 
+    else 
+    {
     ?>
         <div class="score_with_count">
             <h2>로그인하세요</h3>
