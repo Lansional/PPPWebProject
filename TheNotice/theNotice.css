@@ -17,11 +17,26 @@ body {
 
 .logo {
     float: left;
-    margin-top: 10px;
+    margin-top: 20px;
     width: 150px;
     height: 40px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    
+}
+.logo1 {
+    float: left;
+    margin-top: 20px;
+    width: 30px;
+    height: 40px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.logo2 {
+    float: left;
+    margin-top: 20px;
+    width: 30px;
+    height: 40px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .theTagUL {
@@ -31,11 +46,12 @@ body {
 }
 
 .theTagLI {
-    margin-left: 30px;
+    margin-left: 80px;
     font-size: 10pt;
     display: inline;
     color: white;
 }
+
 
 .LIlink {
     color: white;

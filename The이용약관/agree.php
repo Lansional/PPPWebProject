@@ -30,16 +30,20 @@
 
 <body>
     <div id="mySidenav" class="sidenav">
-        <img class="logo" style="margin-left: 20px"  src="팝팀에틱.jpg"><br><br><br><br>
+        <img class="logo1"  style="margin-left: 20px" src="fuck-you.jpg">
+        <img class="logo"  src="팝팀에픽.jpg">
+        <img class="logo2"  src="fuck-you.jpg"><br><br><br><br>
         <a class="navID" href="../Main/main.php">게임</a>
         <a class="navID" href="../TheNotice/theNotice.php">공지사항</a>
     </div>
     <!-- 상단 바 -->
     <div class="theBar">
-        <img class="logo" src="팝팀에틱.jpg">
+        <img class="logo1" src="fuck-you.jpg">
+        <img class="logo" src="팝팀에픽.jpg">
+        <img class="logo2" src="fuck-you.jpg">
         <ul class="theTagUL">
             <li class="theTagLI"><a class="LIlink" href="../Main/main.php">게임</a></li>
-            <li class="theTagLI"><a class="LIlink" href="../TheNotice/theNotice.php">공지사항</a></li>
+            <li class="theTagLI"  style="margin-left: 20px"><a class="LIlink" href="../TheNotice/theNotice.php">공지사항</a></li>
         </ul>
         <a style="float: right; color: black; text-decoration: none; " href="#">
             <div id="hiddenBtn">
