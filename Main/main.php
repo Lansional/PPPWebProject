@@ -6,6 +6,7 @@
     ?>
     <link href="main.css" rel="stylesheet">
     <script>
+        var check = false;
         // int i=1;
         // function openNav() 
         // {
@@ -41,17 +42,21 @@
     
     <iframe class="all-leader" name="leaderboard" ></iframe>
     
-    <a href="../TheNotice/theNotice.php" style="text-decoration: none; color: black;"><div class="menu1"><h3 style="margin-top: -0.1px; margin-left: 7px">①</h3><h3 style="text-align: center; margin-left: 10px; margin-top: -40px;">공지사항</h1></div></a>
-  
+    <a href="../TheNotice/theNotice.php" onclick="check = true;" style="text-decoration: none; color: black;"><div class="menu1"><h3 style="margin-top: -0.1px; margin-left: 7px">①</h3><h3 style="text-align: center; margin-left: 10px; margin-top: -40px;">공지사항</h1></div></a>
+
+
     <?php
     session_start();
 
     if (!$_SESSION['is_login']) {
+        $result = mysqli_query($db_conn, "SELECT * FROM $forTable ORDER BY count DESC");
+        $row = mysqli_fetch_array($result);
     ?>
-        <a href="../Login/login.html" style="text-decoration: none; color: black;"><div class="menu2"><h3 style="margin-top: -0.1px; margin-left: 7px">②</h3><h3 style="text-align: center; margin-left: 10px; margin-top: -40px;">로그인</h1></div></a>
-        <?php
+    <a href="../Login/login.html" onclick="check = true;" style="text-decoration: none; color: black;"><div class="menu2"><h3 style="margin-top: -0.1px; margin-left: 7px">②</h3><h3 style="text-align: center; margin-left: 10px; margin-top: -40px;">로그인</h1></div></a>
+    <?php
     } else {
         ?>
+        <script>check = true;</script>
         <a href="../Login/logout.php"  style="text-decoration: none; color: black;"><div class="menu2"><h3 style="margin-top: -0.1px; margin-left: 7px">②</h3><h3 style="text-align: center; margin-left: 10px; margin-top: -40px;">로그아웃</h1></div></a>
         <?php
     }
@@ -142,29 +147,52 @@
     {
         $result = mysqli_query($db_conn, "SELECT * FROM $forTable WHERE account='".$_SESSION['id']."'");
         $row = mysqli_fetch_array($result);
+        $count = $row['count'];
     ?>
         <div class="score_with_count">
             <h2><?= $_SESSION['id'] ?></h3>
-            <h3><?= $row['count'] ?></h3>
+            <h3 id="count"><?= $row['count'] ?></h3>
         </div>
     <?php
     } 
-    else 
-    {
+    else {
     ?>
-        <div class="score_with_count">
-            <h2>로그인하세요</h3>
-            <h3></h3>
+        <div id="nohomrim" class="score_with_count">
+            <h2>로그인하세요</h2>
         </div>
     <?php
     }
     ?>
         <div href="plus.php">
-            <div class="nohomrim"></div>
+            <div id="punch" class="nohomrim"></div>
         </div>
     </div>
     <script>
+        var punch = document.getElementById('punch');
+        var count = document.getElementById('count');
+        var tophp = document.getElementById('toPHP');
+        var num = <?=$count?>;
 
+        punch.addEventListener('click', function punch() {
+            num++;
+            count.innerText = num;
+        });
+
+        console.log("check: " + check);
+        
+        if (!check) {
+
+            window.onbeforeunload = function() {
+                setTimeout( function() {
+                    var str = 'push.php?count=';
+                    str += num.toString();
+                    console.log(str);
+                    window.location.href = str;
+                }, 1000 );
+    
+                return '정말로 종료하시겠습니까?';
+            };
+        }
     </script>
     <?php
 mysqli_close($db);
