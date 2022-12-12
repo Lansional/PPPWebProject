@@ -30,13 +30,13 @@
 
 <body>
     <div id="mySidenav" class="sidenav">
-        <img class="logo" style="margin-left: 20px"><br><br><br><br>
+        <img class="logo" style="margin-left: 20px"  src="팝팀에틱.jpg"><br><br><br><br>
         <a class="navID" href="../Main/main.php">게임</a>
         <a class="navID" href="../TheNotice/theNotice.php">공지사항</a>
     </div>
     <!-- 상단 바 -->
     <div class="theBar">
-        <img class="logo">
+        <img class="logo" src="팝팀에틱.jpg">
         <ul class="theTagUL">
             <li class="theTagLI"><a class="LIlink" href="../Main/main.php">게임</a></li>
             <li class="theTagLI"><a class="LIlink" href="../TheNotice/theNotice.php">공지사항</a></li>
