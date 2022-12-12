@@ -6,6 +6,7 @@
     ?>
     <link href="main.css" rel="stylesheet">
     <script>
+        
         var check = false;
         // int i=1;
         // function openNav() 
@@ -38,7 +39,7 @@
 // });
         </script>
 </head>
-<body>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
     
     <iframe class="all-leader" name="leaderboard" ></iframe>
     
@@ -168,6 +169,8 @@
         </div>
     </div>
     <script>
+        document.addEventListener('dragstart drop', event => event.preventDefault());
+
         var punch = document.getElementById('punch');
         var count = document.getElementById('count');
         var tophp = document.getElementById('toPHP');
@@ -193,6 +196,8 @@
                 return '정말로 종료하시겠습니까?';
             };
         }
+
+
     </script>
     <?php
 mysqli_close($db);

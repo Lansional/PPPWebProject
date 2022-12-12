@@ -250,6 +250,7 @@ body {
     margin: auto;
 
     -webkit-text-stroke: 2px black;
+    user-select: none;
 }
 
 @media screen and (max-height: 450px) {
