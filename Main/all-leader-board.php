@@ -1,9 +1,16 @@
 <html>
 <head>
-    <link href="all-leader-board.css" rel="stylesheet"> 
+    <link href="all-leader-board.css" rel="stylesheet">
+    <meta http-equiv="refresh" content="5">
 </head>
-<body   >
-<a href="leader-reset.html" target="leaderboard" style=" text-decoration: none;">
+<body>
+    <?php
+    include "../theServer.inc";
+
+    $result = mysqli_query($db_conn, "SELECT * FROM $forTable ORDER BY count DESC");
+    $row = mysqli_fetch_array($result);
+    ?>
+    <a href="leader-reset.html" target="leaderboard" style=" text-decoration: none;">
     <div class="close">
         <p class="text1">⮈ 창 닫기</p>
     </div>
@@ -16,16 +23,32 @@
         <div class="emogi">  
         <p class="main-ranking1">🥇</p>
         </div>
-         <p class="name"> 이름</p>
-        <p class="score">0</p>
+         <p class="name"><?=$row['account']?></p>
+        <p class="score"><?=$row['count']?></p>
     </div>
-    
-    <div class="all-leader2">
-        <div class="emogi"> 
-         <p class="main-ranking1">🥈</p>
+    <?php
+    $row = mysqli_fetch_array($result);
+    ?>
+    <div class="all-leader">
+        <div class="emogi">  
+        <p class="main-ranking1">🥈</p>
         </div>
-        <p class="name"> 이름</p>
-        <p class="score">0</p>
+         <p class="name"><?=$row['account']?></p>
+        <p class="score"><?=$row['count']?></p>
     </div>
+    <?php
+    while ($row = mysqli_fetch_array($result)) {
+    ?>
+    <div class="all-leader">
+        <!-- <div class="emogi">   -->
+        <!-- <p class="main-ranking1">🥈</p> -->
+        <!-- </div> -->
+        <p class="name"><?=$row['account']?></p>
+        <p class="score"><?=$row['count']?></p>
+    </div>
+    <?php
+    }
+    mysqli_close($db_conn);
+    ?>
 </body>
 </html>

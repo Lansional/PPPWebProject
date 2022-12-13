@@ -221,15 +221,34 @@ body {
     height: 5vh;
 }
 
+#submit {
+    width: 130px;
+    height: 50px;
+    margin-top: 20px;
+    border: 1px solid white;
+    color: black;
+    background-color: white;
+    border-radius: 100px;
+}
+
 .nohomrim {
     background-image: url("팝팀에픽1.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    margin: auto;
-    height: 50vh;
+    /* margin: auto; */
+    
+    position: fixed;
+    width: 500px;
+    height: 51vh;
+    margin-top: 90px;
+    padding-left: 25vw;
+    /* margin-left: 200px; */
+    /* padding-top: 4vh; */
+
     max-width: 40rem;
 }
+
 
 .nohomrim:active {
     background-image: url("팜틱에픽2.png");
@@ -237,19 +256,15 @@ body {
 }
 
 .score_with_count {
-    width: 50vw;
     text-align: center;
-
-    /* border: 1px solid black; */
-    /* background-color: white; */
-    /* padding: 10px; */
 
     color: white;
     font-size: 30pt;
-    height: 100px;
-    margin: auto;
+    float: left;
+    margin-left: 20vw;
 
     -webkit-text-stroke: 2px black;
+    user-select: none;
 }
 
 @media screen and (max-height: 450px) {
