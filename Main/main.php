@@ -56,7 +56,7 @@
         <div id="mySidenav" class="main-top-bar">
             <div  class="main-under-benner1">
                 <div class="main-under-benner2">
-                    <iframe class="ads" src="놇두ads.html"></iframe>
+                    <iframe class="ads" src="롤ads.html"></iframe>
                 </div>
                 <a href="all-leader-board.php" target="leaderboard">
                     <div style="float: right; margin: -6px 30px; height: 0;">
