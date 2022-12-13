@@ -1,36 +1,35 @@
-body
-{
-    background-color: white;   
+body {
+    background-color: white;
     margin: 0;
     padding: 0;
-  
+
 }
-.leader
-{
+
+.leader {
     width: 100%;
     height: 10vh;
     border-bottom: 4px solid black;
     /* position: fixed; */
 }
-.all-leader
-{
+
+.all-leader {
     width: 100%;
     height: 6vh;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     border-bottom: 4px solid black;
-  
+
 }
-.all-leader2
-{
+
+.all-leader2 {
     width: auto;
     height: 6vh;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     border-bottom: 4px solid black;
     margin-top: 10px;
     border-top: 4px solid black;
 }
-.close
-{
+
+.close {
 
     width: auto;
     height: 4vh;
@@ -38,41 +37,39 @@ body
     border-radius: 15px;
     /* margin-bottom: 40px; */
     /* position: fixed; */
-   
+
 }
-.text
-{
+
+.text {
     text-align: center;
 
-    
+
 }
-.text1
-{
-   margin-top: 0px;
+
+.text1 {
+    margin-top: 0px;
     color: black;
     text-align: center;
     font-size: larger;
 }
-.emogi
-{
+
+.emogi {
     float: left;
     width: 15vw;
     height: 100%;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 
-.main-ranking1 
-{
+.main-ranking1 {
     padding: 0 0.6rem;
     float: left;
     margin-top: 9;
 }
 
-.name
-{
+.name {
     float: left;
 }
-.score
-{
+
+.score {
     float: right;
 }
