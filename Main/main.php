@@ -9,20 +9,7 @@
     <script>
         
         var check = false;
-        // int i=1;
-        // function openNav() 
-        // {
-        //     i++;
-        //     if(i=2)
-        //     {
-        //     function openNav()
-        //     {
-        //     document.getElementById("mySidenav").style.height = "0";
-        //     }
-        //     i/2=i;
-        //     }
-        //     document.getElementById("mySidenav").style.height = "160px";
-        // }
+     
         </script>
 </head>
 <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
@@ -56,7 +43,7 @@
         <div id="mySidenav" class="main-top-bar">
             <div  class="main-under-benner1">
                 <div class="main-under-benner2">
-                    <iframe class="ads" src="롤ads.html"></iframe>
+                    <iframe class="ads" src="롤adscopy.html"></iframe>
                 </div>
                 <a href="all-leader-board.php" target="leaderboard">
                     <div style="float: right; margin: -6px 30px; height: 0;">
@@ -118,13 +105,7 @@
         </div>
     </div>
     
-    <a href="javascript:void(0)" onclick="openNav()" style="text-decoration: none;">
-        <div class="main-top-button" id="hiddenBtn">
-            <h2 id="btn" style="text-align: center; color: black; height: 0; margin-top:-7px;">
-                =
-            </h2> 
-        </div>
-    </a>
+   
         
     <div class="main-click">
         <div class="img">
